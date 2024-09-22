@@ -22,15 +22,17 @@ const Header = () => {
                     {isOpen ? <IoCloseOutline size={20} /> : <FiMenu size={20} />}
                 </div>
             </div>
-            <div className={isOpen ? "fixed top-8 left-0 h-full w-[50%] bg-white transform ease-in-out duration-500 md:hidden" : "fixed left-[-100%] bg-white ease-in-out duration-500 md:hidden"}>
-                <h1 className=' font-bold text-2xl capitalize'>protfolio</h1>
-                <ul className='uppercase flex flex-col py-3 '>
-                    <li className='p-3 border-b border-gray-500 '>home</li>
-                    <li className='p-3 border-b border-gray-500'>company</li>
-                    <li className='p-3 border-b border-gray-500'>careers</li>
-                    <li className='p-3 border-b border-gray-800'>about</li>
-                    <li className='p-3'>Get started</li>
-                </ul>
+            <div className={isOpen ? "fixed left-0 h-full w-[50%] bg-gradient-to-b from-gray-600 via-slate-600 to-black text-blue-500 z-50 transform ease-in-out duration-500 md:hidden" : "fixed left-[-100%] bg-white ease-in-out duration-500 md:hidden"}>
+                <div className='mt-8 '>
+                    <h1 className=' font-bold text-2xl capitalize'>protfolio</h1>
+                    <ul className='uppercase flex flex-col py-3 '>
+                        <li className='p-3 border-b border-gray-500 '>home</li>
+                        <li className='p-3 border-b border-gray-500'>company</li>
+                        <li className='p-3 border-b border-gray-500'>careers</li>
+                        <li className='p-3 border-b border-gray-800'>about</li>
+                        <li className='p-3'>Get started</li>
+                    </ul>
+                </div>
             </div>
         </div >
     )
