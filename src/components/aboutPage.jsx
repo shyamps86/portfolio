@@ -5,8 +5,8 @@ const About = () => {
     return (
         <div className='h-screen max-w-screen-lg flex justify-center rounded-bl-2xl '>
 
-            <div className='flex justify-center items-center'>
-                <div className='flex items-center sm:flex-row flex-col-reverse w-full'>
+            <div className='flex justify-center items-center '>
+                <div className='flex items-center sm:flex-row flex-col-reverse w-full bg-slate-800 rounded-xl'>
 
                     <div className='w-full ml-2'>
 

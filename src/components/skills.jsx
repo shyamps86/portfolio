@@ -56,24 +56,24 @@ const Experience = () => {
 
   return (
 
-    <div className="w-full h-full items-center justify-center bg-cyan-950 rounded-2xl p-4 pb-10">
+    <div className="w-full h-full bg-cyan-950 rounded-2xl p-4 ">
       <div>
         <h1 className="text-2xl font-bold ">Experience</h1>
         <span>Here is the some of my work</span>
       </div>
       <div className="flex flex-col justify-center items-center sm:flex-row gap-20 p-10">
-        <div className="grid grid-cols-4 sm:grid-cols-3 place-items-center place-content-center h-full w-full gap-12 ">
+        <div className="grid grid-cols-4 sm:grid-cols-3 place-content-center h-full w-full gap-12 m-4">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500  flex flex-col items-center gap-2 rounded-full h-[70px] w-[80px] ${style}`}>
+              className={`shadow-md hover:scale-105 duration-500  flex flex-col items-center gap-2 rounded-full h-[70px] w-[80px]`}>
               <img src={src} alt="" className=" mx-auto rounded-full " />
               <p className="text-md">{title}</p>
             </div>
           ))}
         </div>
         <div className="grid grid-rows-3 gap-5  ">
-          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-xl
+          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-2xl
                      from-blue-900 via-blue-950 to-gray-900 rounded-md p-5'>
             <GrUserWorker color='white' size={100} />
             <div className='flex flex-col'>
@@ -83,7 +83,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-xl
+          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-2xl
                      from-blue-900 via-blue-950 to-gray-900 rounded-md p-5 '>
             <GrUserWorker color='white' size={100} />
             <div className='flex flex-col'>
@@ -93,7 +93,7 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-xl
+          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-2xl
                      from-blue-900 via-blue-950 to-gray-900 rounded-md p-5 '>
             <GrUserWorker color='white' size={100} />
             <div className='flex flex-col'>
