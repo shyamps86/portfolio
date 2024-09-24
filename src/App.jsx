@@ -10,7 +10,7 @@ import Contact from './components/contact';
 const App = () => {
   return (
 
-    <div className='bg-black text-white'>
+    <div className='bg-gradient-to-r from-slate-500 via-slate-900 to-gray-900 text-white'>
 
       <div className='mx-auto max-w-screen-lg '>
 

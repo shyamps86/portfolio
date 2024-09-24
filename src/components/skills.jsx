@@ -6,7 +6,8 @@ import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-import java from'../assets/java.png'
+import java from '../assets/java.png'
+import { GrUserWorker } from "react-icons/gr";
 const Experience = () => {
   const techs = [
     {
@@ -46,39 +47,70 @@ const Experience = () => {
       style: "shadow-gray-400",
     },
     {
-        id: 9,
-        src: java,
-        title: "java",
-        style: "shadow-sky-400",
-      },
+      id: 9,
+      src: java,
+      title: "java",
+      style: "shadow-sky-400",
+    },
   ];
 
   return (
-    <div
-      name="experience"
-      className="w-full "
-    >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            Experience
-          </p>
-          <p className="py-6">These are the technologies I've worked with</p>
-        </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+    <div className="w-full h-full items-center justify-center bg-cyan-950 rounded-2xl p-4 pb-10">
+      <div>
+        <h1 className="text-2xl font-bold ">Experience</h1>
+        <span>Here is the some of my work</span>
+      </div>
+      <div className="flex flex-col justify-center items-center sm:flex-row gap-20 p-10">
+        <div className="grid grid-cols-4 sm:grid-cols-3 place-items-center place-content-center h-full w-full gap-12 ">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
-            >
-              <img src={src} alt="" className="w-20 mx-auto" />
-              <p className="mt-4">{title}</p>
+              className={`shadow-md hover:scale-105 duration-500  flex flex-col items-center gap-2 rounded-full h-[70px] w-[80px] ${style}`}>
+              <img src={src} alt="" className=" mx-auto rounded-full " />
+              <p className="text-md">{title}</p>
             </div>
           ))}
         </div>
+        <div className="grid grid-rows-3 gap-5  ">
+          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-xl
+                     from-blue-900 via-blue-950 to-gray-900 rounded-md p-5'>
+            <GrUserWorker color='white' size={100} />
+            <div className='flex flex-col'>
+              <h2 className='m-1 uppercase '>A front-end developer</h2>
+              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
+                interfaces for websites and applications. Some of their responsibilities
+              </div>
+            </div>
+          </div>
+          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-xl
+                     from-blue-900 via-blue-950 to-gray-900 rounded-md p-5 '>
+            <GrUserWorker color='white' size={100} />
+            <div className='flex flex-col'>
+              <h2 className='m-1 uppercase '>A front-end developer</h2>
+              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
+                interfaces for websites and applications. Some of their responsibilities
+              </div>
+            </div>
+          </div>
+          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-xl
+                     from-blue-900 via-blue-950 to-gray-900 rounded-md p-5 '>
+            <GrUserWorker color='white' size={100} />
+            <div className='flex flex-col'>
+              <h2 className='m-1 uppercase '>A front-end developer</h2>
+              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
+                interfaces for websites and applications. Some of their responsibilities
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
       </div>
     </div>
+
+
+
   );
 };
 

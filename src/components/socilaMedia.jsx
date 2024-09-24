@@ -3,26 +3,26 @@ import { FaInstagram } from "react-icons/fa6";
 
 const SocialMedia = () => {
   return (
-    <div className='flex flex-col bg-yellow-200'>
-        <div className='flex gap-2 max-w-screen-md duration-700 left-[-70px] fixed hover:left-[0px] top-[40%] '>
+    <div className='flex flex-col '>
+        <div className='flex gap-2 max-w-screen-md fixed  hover:left-[0px] top-[30%] left-[-70px] duration-700 '>
             <p className=''>Instagram</p>
             <div>
                 <FaInstagram size={30}/>
             </div>
         </div>
-        <div className='flex gap-2 max-w-screen-md duration-700 left-[-70px] fixed hover:left-[0px] top-[47%] '>
+        <div className='flex gap-2 max-w-screen-md fixed hover:left-[0px] top-[40%] left-[-70px] duration-700   '>
             <p className=''>Instagram</p>
             <div>
                 <FaInstagram size={30}/>
             </div>
         </div>
-        <div className='flex gap-2 max-w-screen-md duration-700 left-[-70px] fixed hover:left-[0px] top-[54%] '>
+        <div className='flex gap-2 max-w-screen-md fixed hover:left-[0px] top-[50%] left-[-70px] duration-700  '>
             <p className=''>Instagram</p>
             <div>
                 <FaInstagram size={30}/>
             </div>
         </div>
-        <div className='flex gap-2 max-w-screen-md duration-700 left-[-70px] fixed hover:left-[0px] top-[61%] '>
+        <div className='flex gap-2 max-w-screen-md fixed hover:left-[0px] top-[60%] left-[-70px] duration-700 '>
             <p className=''>Instagram</p>
             <div>
                 <FaInstagram size={30}/>
