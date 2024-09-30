@@ -8,6 +8,7 @@ import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
 import java from '../assets/java.png'
 import { GrUserWorker } from "react-icons/gr";
+
 const Experience = () => {
   const techs = [
     {
@@ -58,8 +59,8 @@ const Experience = () => {
 
     <div className="w-full h-full bg-cyan-950 rounded-2xl p-4 ">
       <div>
-        <h1 className="text-2xl font-bold ">Experience</h1>
-        <span>Here is the some of my work</span>
+      <div className='text-3xl font-bold uppercase'>Experience</div>
+        
       </div>
       <div className="flex flex-col justify-center items-center sm:flex-row gap-20 p-10">
         <div className="grid grid-cols-4 sm:grid-cols-3 place-content-center h-full w-full gap-12 m-4">
