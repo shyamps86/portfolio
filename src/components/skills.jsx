@@ -54,28 +54,24 @@ const Experience = () => {
       style: "shadow-sky-400",
     },
   ];
-
   return (
-
-    <div className="w-full h-full bg-cyan-950 rounded-2xl p-4 ">
-      <div>
-      <div className='text-3xl font-bold uppercase'>Experience</div>
-        
+    <div className="w-full h-full bg-cyan-950 rounded-2xl p-4 flex flex-col gap-5 sm:flex-row  ">
+      <div className="sm:w-1/2 sm:h-1/2 w-full h-full grid grid-cols-2 sm:grid-cols-3 p-10 sm:p-4 sm:gap-3 ">
+        {techs.map((value, index) => {
+          return (
+            <div key={value.id} className="flex flex-col gap-1 hover:scale-105 duration-300 justify-center items-center m-3 sm:m-1 w-full h-full container mx-auto  ">
+              <img className={`rounded-full ${value.style} w-[100px] h-[100px] sm:w-[90px] sm:h-[90px] md:w-[100px] md:h-[100px] `} src={value.src} alt={value.title} w />
+              <span>{value.title}</span>
+            </div>
+          )
+        })}
       </div>
-      <div className="flex flex-col justify-center items-center sm:flex-row gap-20 p-10">
-        <div className="grid grid-cols-4 sm:grid-cols-3 place-content-center h-full w-full gap-12 m-4">
-          {techs.map(({ id, src, title, style }) => (
-            <div
-              key={id}
-              className={`shadow-md hover:scale-105 duration-500  flex flex-col items-center gap-2 rounded-full h-[70px] w-[80px]`}>
-              <img src={src} alt="" className=" mx-auto rounded-full " />
-              <p className="text-md">{title}</p>
-            </div>
-          ))}
-        </div>
-        <div className="grid grid-rows-3 gap-5  ">
-          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-2xl
-                     from-blue-900 via-blue-950 to-gray-900 rounded-md p-5'>
+       
+        <div className= "sm:w-1/2 sm:h-1/2 w-full h-full  grid grid-rows-2 p-10 sm:p-4 sm:gap-3 ">
+        {/* //'grid grid-rows-3 place-items-center text-white w-1/2 h-full gap-5 border-2'> */}
+          <div className='flex gap-4 items-center hover:bg-gradient-to-r rounded-l-xl
+                     hover:from-gray-500 hover:to-gray-800 rounded-md 
+                     duration-300 transition-all'>
             <GrUserWorker color='white' size={100} />
             <div className='flex flex-col'>
               <h2 className='m-1 uppercase '>A front-end developer</h2>
@@ -84,30 +80,28 @@ const Experience = () => {
               </div>
             </div>
           </div>
-          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-2xl
-                     from-blue-900 via-blue-950 to-gray-900 rounded-md p-5 '>
-            <GrUserWorker color='white' size={100} />
-            <div className='flex flex-col'>
-              <h2 className='m-1 uppercase '>A front-end developer</h2>
-              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
-                interfaces for websites and applications. Some of their responsibilities
-              </div>
-            </div>
-          </div>
-          <div className='flex gap-4 items-center bg-gradient-to-r rounded-l-2xl
-                     from-blue-900 via-blue-950 to-gray-900 rounded-md p-5 '>
-            <GrUserWorker color='white' size={100} />
-            <div className='flex flex-col'>
-              <h2 className='m-1 uppercase '>A front-end developer</h2>
-              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
-                interfaces for websites and applications. Some of their responsibilities
-              </div>
-            </div>
-          </div>
-          
 
+          <div className='flex gap-4 items-center hover:bg-gradient-to-r rounded-l-xl
+                     hover:from-gray-500 hover:to-gray-800 rounded-md '>
+            <GrUserWorker color='white' size={100} />
+            <div className='flex flex-col'>
+              <h2 className='m-1 uppercase '>A front-end developer</h2>
+              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
+                interfaces for websites and applications. Some of their responsibilities
+              </div>
+            </div>
+          </div>
+          <div className='flex gap-4 items-center hover:bg-gradient-to-r rounded-l-xl
+                     hover:from-gray-500 hover:to-gray-800 rounded-md '>
+            <GrUserWorker color='white' size={100} />
+            <div className='flex flex-col'>
+              <h2 className='m-1 uppercase '>A front-end developer</h2>
+              <div className='text-sm sm:text-md'> is a web developer who specializes in creating user
+                interfaces for websites and applications. Some of their responsibilities
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
 
 
